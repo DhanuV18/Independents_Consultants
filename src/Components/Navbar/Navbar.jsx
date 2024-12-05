@@ -62,18 +62,20 @@ const Navbar = () => {
             <Link to="/" className='navbar__list'>Home</Link>
             </motion.li>
             <motion.li variants={itemVariants}>
-            <Link to="/service" className='navbar__list'>Services</Link>
+            <Link to="service" className='navbar__list'>Services</Link>
             </motion.li>
             <motion.li variants={itemVariants}>
-            <Link to="/" className='navbar__list'>About Us</Link>
+            <Link to="aboutus" className='navbar__list'>About Us</Link>
             </motion.li>
+            {/* <motion.li variants={itemVariants}>
+            <Link to="testimonials" className='navbar__list'>Testimonials</Link>
+            </motion.li> */}
             <motion.li variants={itemVariants}>
-            <Link to="/services" className='navbar__list'>Testimonials</Link>
-            </motion.li>
-            <motion.li variants={itemVariants}>
-            <a href="#contact">
-                <button className="btn btn--primary">Get in Touch</button>
-            </a>
+              <Link to="contact">
+                <a href="#contact">
+                    <button className="btn btn--primary">Get in Touch</button>
+                </a>               
+              </Link>
             </motion.li>
         </motion.ul>
             <motion.img src={menu} alt="menu" className='menu' onClick={toggleMenu} />

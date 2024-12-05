@@ -9,7 +9,7 @@ import image6 from '../../assets/item6.jpg'
 import image7 from '../../assets/item7.jpg'
 
 
-import Service from '../../NewPages/Services/Service.jsx'
+import Service from '../../NewPages/Service/Service.jsx'
 
 const Cards = () => {
   return (

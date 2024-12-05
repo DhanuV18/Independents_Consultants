@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from './Components/Home/Home'
 import Navbar from './Components/Navbar/Navbar'
@@ -10,7 +10,9 @@ import Mission from './Components/Mission/Mission'
 import Testimonials from './Components/Testimonials/Testimonials'
 import ContactForm from './Components/ContactForm/ContactForm'
 
-import Service from './NewPages/Services/Service';
+import Service from './NewPages/Service/Service';
+import AboutUs from './NewPages/AboutUs/AboutUs';
+import Contact from './NewPages/ContactUs/Contact'
 
 
 const App = () => {
@@ -22,7 +24,11 @@ const App = () => {
     <Router>
         <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/service" element={<Service />} /> */}
+            <Route path="service" element={<Service />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
+
+
 
 
         </Routes>
