@@ -36,7 +36,7 @@ const Cards = () => {
         <div class="card">
             <img src={image1} alt="image 1" className='image' />
             <div className='image_card-image'>
-                <h3 className='card__text'>MSP</h3>
+                <h3 className='card__text'>Managed IT Services</h3>
                 <button className="btn card__button">Click here</button>
 
             </div>
@@ -44,7 +44,7 @@ const Cards = () => {
         <div className="card">
             <img src={image2} alt="image 2" className='image' />
             <div className='image_card-image'>
-                <h3 className='card__text'>Laptop Maintanence</h3>
+                <h3 className='card__text'>Cloud Services</h3>
                 {/* <p className="card__button">Click here</p> */}
                 <button className="btn card__button">Click here</button>
             </div>
@@ -52,7 +52,7 @@ const Cards = () => {
         <div className="card">
             <img src={image3} alt="image 3" className='image' />
             <div className='image_card-image'>
-                <h3 className='card__text'>RCM</h3>
+                <h3 className='card__text'>Cyber Security</h3>
                 <button className="btn card__button">Click here</button>
 
             </div>
