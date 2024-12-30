@@ -6,17 +6,21 @@ import ContactForm from '../ContactForm/ContactForm'
 import Testimonials from '../Testimonials/Testimonials'
 import Founder from '../Founder/Founder'
 import Mission from '../Mission/Mission'
+import NewHero from '../NewHero/NewHero'
+import NewNavbar from '../NewNavbar/NewNavbar'
 
 const Home = () => {
   return (
     <div>
         <Navbar />
-        <Hero />
+        {/* <NewNavbar /> */}
+        <NewHero />
+        {/* <Hero /> */}
         <Cards />
-        <Founder/>
-        <Testimonials/>
-        <Mission />
-        <ContactForm />
+        {/* <Founder/> */}
+        {/* <Testimonials/> */}
+        {/* <Mission /> */}
+        {/* <ContactForm /> */}
 
     </div>
   )

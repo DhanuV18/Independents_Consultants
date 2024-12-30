@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 
+
 import { motion } from "framer-motion"
 
 import './Navbar.css'
@@ -9,7 +10,8 @@ import logo from '../../assets/Logo2.png'
 import menu from '../../assets/menu.png'
 
 const Navbar = () => {
-
+  
+  
     const [mobileMenu, setMobileMenu] = useState(false);
     const toggleMenu = () => {
         mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
@@ -45,7 +47,7 @@ const Navbar = () => {
 
   return (  
 
-        <nav className='container'>
+        <nav className='navbar'>
             <motion.img src={logo} alt="Company Logo"
                         className='logo' 
                         variants={logoVariants}
@@ -59,23 +61,23 @@ const Navbar = () => {
                     animate="visible"
             >
             <motion.li variants={itemVariants}>
-            <Link to="/" className='navbar__list'>Home</Link>
+                  <Link to="/" className='navbar__list'>Home</Link>
             </motion.li>
             <motion.li variants={itemVariants}>
-            <Link to="service" className='navbar__list'>Services</Link>
+                  <Link to="service" className='navbar__list'>Services</Link>
             </motion.li>
             <motion.li variants={itemVariants}>
-            <Link to="aboutus" className='navbar__list'>About Us</Link>
+                  <Link to="about-us" className='navbar__list'>About Us</Link>
             </motion.li>
             {/* <motion.li variants={itemVariants}>
             <Link to="testimonials" className='navbar__list'>Testimonials</Link>
             </motion.li> */}
             <motion.li variants={itemVariants}>
-              <Link to="contact">
-                <a href="#contact">
-                    <button className="btn btn--primary">Get in Touch</button>
-                </a>               
-              </Link>
+                  <Link to="contact-us">
+                    <a href="#contact">
+                        <button className="btn btn--primary">Get in Touch</button>
+                    </a>               
+                  </Link>
             </motion.li>
         </motion.ul>
             <motion.img src={menu} alt="menu" className='menu' onClick={toggleMenu} />

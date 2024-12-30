@@ -180,7 +180,7 @@
    */
 
    /* General Hero Styles */
-.hero {
+/* .hero {
     position: relative;
     height: 125vh;
     overflow: hidden;
@@ -215,10 +215,10 @@
   .hero__subheading {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-  }
+  } */
   
   /* Parallax Layers */
-  .parallax-layer {
+  /* .parallax-layer {
     position: absolute;
     top: 0;
     left: 0;
@@ -249,7 +249,7 @@
     z-index: 5;
     background-image: url('../../assets/foreground-front.webp');
     mix-blend-mode: multiply; 
-  }
+  } */
   
 /* 
  .hero__content{
@@ -284,3 +284,124 @@
       font-size: 7.5rem;
      }
   }  */
+
+
+
+  .parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .background__image{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+   
+}
+
+
+.parallax-text {
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 50;
+    top: 45%;
+}
+
+/* Trees */
+.tree {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    z-index: 2;
+}
+
+.tree-left {
+    left: 5%;
+    top: 60%;
+}
+
+.tree-right {
+    right: 5%;
+    top: 60%;
+}
+
+/* Gates */
+.gate {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    z-index: 5;
+    bottom: 0;
+}
+
+.gate-left {
+    left: 20%;
+}
+
+.gate-right {
+    right: 20%;
+}
+
+/* Tablets and Larger Devices */
+@media (min-width: 768px) {
+    .parallax-text {
+        font-size: 3rem;
+        top: 40%;
+    }
+
+    .tree,
+    .gate {
+        width: 100%;
+        height: auto;
+    }
+
+    .tree-left {
+        left: 10%;
+    }
+
+    .tree-right {
+        right: 10%;
+    }
+
+    .gate-left {
+        left: 25%;
+    }
+
+    .gate-right {
+        right: 25%;
+    }
+}
+
+/* Desktops and Larger Devices */
+@media (min-width: 1024px) {
+    .parallax-text {
+        font-size: 4rem;
+        top: 40%;
+    }
+
+    .tree, .gate {
+      width: 100%;
+      height: auto;
+    }
+
+    .tree-left {
+        left: 15%;
+    }
+
+    .tree-right {
+        right: 15%;
+    }
+
+    .gate-left {
+        left: 30%;
+    }
+
+    .gate-right {
+        right: 30%;
+    }
+}

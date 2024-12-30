@@ -21,17 +21,24 @@ const App = () => {
 
   return (
  
-    <Router>
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="service" element={<Service />} />
-            <Route path="/about" element={<AboutUs />} />
-            <Route path="/contact" element={<Contact />} />
+    // <Router>
+    //     <Routes>
+    //         <Route path="/" element={<Home />} />
+    //         <Route path="/service" element={<Service />} />
+    //         <Route path="/aboutus" element={<AboutUs />} />
+    //         <Route path="/contact" element={<Contact />} />
+    //     </Routes>
+    // </Router>
 
 
-
-
-        </Routes>
+<Router>
+      {/* <Navbar /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact-us" element={<Contact />} />
+      </Routes>
     </Router>
 
   )

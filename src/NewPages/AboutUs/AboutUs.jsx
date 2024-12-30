@@ -1,10 +1,14 @@
 import React from 'react'
 import './AboutUs.css'
 
+import Navbar from '../../Components/Navbar/Navbar'
+
+
 const AboutUs = () => {
   return (
     <div>
-        <h1>Hello About us</h1>
+        {/* <Navbar /> */}
+        <h1>This is About us page</h1>
     </div>
   )
 }
