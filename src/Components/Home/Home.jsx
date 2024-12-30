@@ -12,7 +12,7 @@ import NewNavbar from '../NewNavbar/NewNavbar'
 const Home = () => {
   return (
     <div>
-        <Navbar />
+        {/* <Navbar /> */}
         {/* <NewNavbar /> */}
         <NewHero />
         {/* <Hero /> */}

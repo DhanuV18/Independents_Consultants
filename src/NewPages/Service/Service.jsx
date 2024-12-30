@@ -22,8 +22,8 @@ const Service = () => {
   return (
     <div>
 
-      <Navbar />
-      <h1>hu</h1>
+
+ 
       <Hero />
       <Cards />
 

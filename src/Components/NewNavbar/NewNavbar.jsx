@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-
-
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion"
 
@@ -31,6 +30,12 @@ const NewNavbar = () => {
        },
      };
    
+     const navigate = useNavigate();
+
+     const goToPage = (path) => {
+       navigate(path);
+     }
+
      const logoVariants = {
        hidden: { opacity: 0, scale: 0.8 },
        visible: {
@@ -60,19 +65,19 @@ const NewNavbar = () => {
             animate="visible"
     >
     <motion.li variants={itemVariants}>
-          <Link to="/" className='navbar__list'>Home</Link>
+          <Link to="/" className='navbar__list' onClick={() => goToPage("/")}>Home</Link>
     </motion.li>
     <motion.li variants={itemVariants}>
-          <Link to="service" className='navbar__list'>Services</Link>
+          <Link to="service" className='navbar__list' onClick={() => goToPage("/service")}>Services</Link>
     </motion.li>
     <motion.li variants={itemVariants}>
-          <Link to="about-us" className='navbar__list'>About Us</Link>
+          <Link to="about-us" className='navbar__list' onClick={() => goToPage("/about-us")}>About Us</Link>
     </motion.li>
     {/* <motion.li variants={itemVariants}>
     <Link to="testimonials" className='navbar__list'>Testimonials</Link>
     </motion.li> */}
     <motion.li variants={itemVariants}>
-          <Link to="contact-us">
+          <Link to="contact-us" onClick={() => goToPage("/contact-us")}>
             <a href="#contact">
                 <button className="btn btn--primary">Get in Touch</button>
             </a>               
